@@ -1,3 +1,5 @@
-{{ define "main" }}
-Esto es simple
-{{end}}
+<h1 style = "color: {{.Params.color}};">Single template</h1>
+
+{{ .URL}}
+{{ $variablefeik := 23}}
+<h1>{{ $variablefeik}}</h1>

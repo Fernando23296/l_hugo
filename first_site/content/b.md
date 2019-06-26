@@ -5,5 +5,6 @@ draft: false
 author: "Fer"
 tags: ["tag2"]
 categories: ["cat2"]
+color: "green"
 ---
-
+## Esto es B

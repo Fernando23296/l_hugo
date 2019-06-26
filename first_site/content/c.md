@@ -5,6 +5,7 @@ draft: false
 author: "Fer"
 tags: ["tag2","tag3"]
 categories: ["cat2"]
+color: "blue"
 ---
 
 Esto es de la pagina de c

@@ -6,7 +6,9 @@ author: "Fernando"
 tags: ["tag1","tag2","tag3"]
 categories: ["cat1"]
 moods: ["Happy","upbeat"]
+color: "red"
 ---
+
 
 {{< youtube D6pELkXYt6Y >}}
 
