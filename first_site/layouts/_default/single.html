@@ -1,5 +1,37 @@
-<h1 style = "color: {{.Params.color}};">Single template</h1>
+<h1>SINGLE TEMPLATE</h1>
+<!--
+{{ $var1 := "dog"}}
+{{ $var2 := "cat"}}
 
-{{ .URL}}
-{{ $variablefeik := 23}}
-<h1>{{ $variablefeik}}</h1>
+{{ if not (eq $var1 $var2)}}
+
+True
+
+{{else}}
+
+False
+
+{{ end }}
+
+
+<br>
+<h2>Ejemplo con numeros</h2>
+{{ $var3 := 3 }}
+{{ $var4 := 5 }}
+
+{{if le $var3 $var4}}
+
+{{$var3}} es igual o menor a {{$var4}}
+
+{{else}}
+
+{{$var3}} no es igual o menor a {{$var4}}
+
+{{end}}
+-->
+{{$title := .Title}}
+{{ range .Site.Pages}}
+
+<a href="{{.URL}}" style="{{ if eq .Title $title}} background-color:yellow;{{end}}">{{.Title}}</a> <br>
+
+{{ end }}
