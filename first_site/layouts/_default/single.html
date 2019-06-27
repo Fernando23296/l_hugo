@@ -29,9 +29,17 @@ False
 
 {{end}}
 -->
+<!--
 {{$title := .Title}}
 {{ range .Site.Pages}}
 
 <a href="{{.URL}}" style="{{ if eq .Title $title}} background-color:yellow;{{end}}">{{.Title}}</a> <br>
 
 {{ end }}
+-->
+
+{{ range .Site.Data.states_titlecase}}
+
+{{.abbreviation}}<br>
+
+{{end}}
