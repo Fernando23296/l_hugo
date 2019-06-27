@@ -1,1 +1,13 @@
 <h1>List template</h1>
+
+<h2>Funcion truncate</h2>
+{{ truncate 20 "hey muy buenas a todos guapisimos"}}
+<h2>Suma random</h2>
+{{ add 1 2}} <br>
+<h2>Multiplicacion random</h2>
+{{ mul 2 3}} <br>
+<h2>Listado random</h2>
+{{ range .Pages}}
+
+    {{.Title}} <br>
+{{ end }}
